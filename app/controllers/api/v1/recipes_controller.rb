@@ -8,4 +8,10 @@ class Api::V1::RecipesController < ApplicationController
       render json: { data: [] }, status: 404
     end
   end
+
+  private
+
+  def country
+    @country = params[:country] || RestCountriesService.new.random_country.name
+  end
 end

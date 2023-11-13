@@ -1,6 +1,8 @@
 class RestCountriesService
   def conn
-    Faraday.new(url: "https://restcountries.com")
+    Faraday.new(url: "https://restcountries.com") do |faraday|
+      faraday.headers["Content-Type"] = "application/json"
+    end
   end
 
   def get_url(url)
