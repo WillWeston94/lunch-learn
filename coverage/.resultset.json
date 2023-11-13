@@ -1,54 +1,30 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/facades/countries_facade.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
       "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/services/rest_countries_service.rb": {
         "lines": [
           1,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
-          1,
+          2,
           null,
-          1,
+          2,
           null,
-          null,
-          null
-        ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/poros/country.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1699890381
+    "timestamp": 1699893627
   }
 }

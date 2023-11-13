@@ -17,4 +17,23 @@ RSpec.describe RestCountriesService, :vcr do
       expect(country[:name][:official]).to be_a(String)
     end
   end
+
+  describe "#capital_coordinates" do
+    it "returns capital city coordinates" do
+      service = RestCountriesService.new
+      country = service.random_country
+      capital = country[:capital]
+
+      expect(country).to be_a(Hash)
+      expect(country).to have_key(:capital)
+      
+      coordinates = service.capital_coordinates(capital)
+
+      expect(coordinates).to be_a(Hash)
+      expect(coordinates).to have_key(:lat)
+      expect(coordinates).to have_key(:lng)
+      expect(coordinates[:lat]).to be_a(Float)
+      expect(coordinates[:lng]).to be_a(Float)
+    end
+  end
 end
