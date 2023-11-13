@@ -15,7 +15,7 @@ class PlacesService
     # binding.pry
     params = {
       categories: "tourism.sights",
-      filter: "circle:#{lon},#{lat},10000",
+      filter: "circle:#{lon},#{lat},1000",
       bias: "proximity:#{lon},#{lat}",
       limit: 10
     }

@@ -1,7 +1,7 @@
 require "rails_helper"
 
-RSpec.describe "Tourist Sites API", type: :request do
-  describe "GET /api/v1/tourist_sites" do
+RSpec.describe "Tourist Sites API" do
+  describe "GET /api/v1/tourist_sites", :vcr do
     let(:country) { "France" }
 
   it "returns an array of tourist site objects for a specific capital" do

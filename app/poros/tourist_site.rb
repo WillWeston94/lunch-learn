@@ -5,5 +5,6 @@ class TouristSite
       @name = data[:properties][:name]
       @formatted = data[:properties][:formatted]
       @place_id = data[:properties][:place_id]
+      binding.pry
     end
   end
