@@ -1,24 +1,25 @@
 # README
+Lunch and Learn is an application to search for cuisines by country, and an opportunity to learn more about that countries culture. This app will allow users to search for recipes by country, favorite recipes, and learn more about a particular country.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+* Ruby on Rails versioning
+ruby 3.2.2
+rails 7.0.8
 
 * System dependencies
 
 * Configuration
 
-* Database creation
-
 * Database initialization
+Rails db:{drop,create,migrate,seed}
+Config/database.yml for database specifics
 
 * How to run the test suite
+RSpec
 
 * Services (job queues, cache servers, search engines, etc.)
+[Edamam API](https://developer.edamam.com/edamam-recipe-api)
 
-* Deployment instructions
 
-* ...
+
+
+
