@@ -62,4 +62,12 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  VCR.configure do |config|
+    config.cassette_library_dir = 'spec/vcr_cassettes'
+    config.hook_into :webmock
+    config.filter_sensitive_data('<EDAMAM_APP_ID>') { Rails.application.credentials.edamam[:app_id] }
+    config.filter_sensitive_data('<EDAMAM_APP_KEY>') { Rails.application.credentials.edamam[:app_key] }
+    config.configure_rspec_metadata!
+  end
 end
