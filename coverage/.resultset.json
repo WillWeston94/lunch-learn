@@ -1,26 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/facades/recipe_facade.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          5,
-          5,
-          5,
-          5,
-          4,
-          8,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/spec/poros/recipe_spec.rb": {
+      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/facades/countries_facade.rb": {
         "lines": [
           1,
           null,
@@ -28,162 +9,6 @@
           1,
           1,
           1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/poros/recipe.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          9,
-          9,
-          9,
-          9,
-          9,
-          null,
-          null
-        ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/spec/requests/api/v1/edamam_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/spec/services/edamam_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          2,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/services/edamam_service.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          6,
-          6,
-          6,
-          6,
-          6,
-          null,
-          null,
-          null,
-          1,
-          6,
-          6,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/spec/services/rest_countries_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
           null,
           null
         ]
@@ -211,36 +36,19 @@
           null
         ]
       },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/controllers/api/v1/recipes_controller.rb": {
+      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/poros/country.rb": {
         "lines": [
           1,
           1,
-          4,
-          4,
-          4,
-          3,
           null,
           1,
+          1,
+          1,
           null,
-          null,
-          null
-        ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/serializers/recipe_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
           null
         ]
       }
     },
-    "timestamp": 1699888625
+    "timestamp": 1699890381
   }
 }
