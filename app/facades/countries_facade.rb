@@ -8,9 +8,10 @@ class CountriesFacade
 
   def capital_coordinates(country)
     response = RestCountriesService.new.capital_coordinates(country)
-
-    if response && response[:capitalInfo] && response[:capitalInfo][:latlng]
-      lon, lat = response[:capitalInfo][:latlng]
+    # binding.pry
+    if response && response[:lat] && response[:lng]
+      lat = response[:lat]
+      lon = response[:lng]
       { lat: lat, lon: lon }
     else
       nil
