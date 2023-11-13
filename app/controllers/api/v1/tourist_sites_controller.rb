@@ -1,10 +1,11 @@
 class Api::V1::TouristSitesController < ApplicationController
   def index 
     country = params[:country]
-    tourist_sites = TouristSiteFacade.get_tourist_sites(country)
+    facade = TouristSitesFacade.new
+    tourist_sites = facade.get_tourist_sites(country)
     if tourist_sites.any?
 
-      render json: { data: tourist_sites_params(tourist_sites) }, status: 200
+      render json: TouristSitesSerializer.new(tourist_sites), status: 200
     else
       render json: { data: [] }, status: 404
     end

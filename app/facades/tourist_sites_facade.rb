@@ -9,8 +9,13 @@ class TouristSitesFacade
     site_data = places_service.get_tourist_sites(capital_coordinates[:lon], capital_coordinates[:lat])
     # binding.pry
 
-    serialized_sites = TouristSitesSerializer.new(site_data[:features]).serialized_json
-
-    serialized_sites
+    sites = site_data[:features].map do |site|
+      TouristSite.new(
+        name: site[:properties][:name],
+        formatted: site[:properties][:formatted],
+        place_id: site[:properties][:place_id]
+      )
+    end
+    sites
   end
 end

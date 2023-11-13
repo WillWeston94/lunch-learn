@@ -3,7 +3,6 @@ require "rails_helper"
 RSpec.describe "Tourist Sites API", type: :request do
   describe "GET /api/v1/tourist_sites" do
     let(:country) { "France" }
-  end
 
   it "returns an array of tourist site objects for a specific capital" do
     get "/api/v1/tourist_sites?country=#{country}"
@@ -24,6 +23,7 @@ RSpec.describe "Tourist Sites API", type: :request do
           place_id: a_kind_of(String)
         }
       )
+      end
     end
   end
 end
