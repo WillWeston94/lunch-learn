@@ -10,10 +10,9 @@ RSpec.describe CountriesFacade do
   end
 
   describe "#capital_coordinates", :vcr do
-    it "returns a hash of coordinates for a given capital city" do
-      country = CountriesFacade.random_country
-      capital = country.capital
-      coordinates = CountriesFacade.capital_coordinates(capital)
+    it "returns coordinates for a given capital city" do
+      facade = CountriesFacade.new
+      coordinates = facade.capital_coordinates("France")
 
       expect(coordinates).to be_a(Hash)
       expect(coordinates).to have_key(:lat)

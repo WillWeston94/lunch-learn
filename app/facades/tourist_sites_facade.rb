@@ -1,6 +1,7 @@
 class TouristSitesFacade
   def self.get_tourist_sites(country)
-    capital_coordinates = RestCountriesService.get_capital_coordinates(country)
+    response = RestCountriesService.new
+    capital_coordinates = response.capital_coordinates(country)
     return [] if capital_coordinates.nil?
 
     site_data = PlacesService.get_tourist_sites(coordinates[:lon], coordinates[:lat])

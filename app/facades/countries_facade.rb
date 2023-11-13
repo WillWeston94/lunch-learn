@@ -5,4 +5,14 @@ class CountriesFacade
     country = countries.random_country
     Country.new(country)
   end
+
+  def capital_coordinates(country)
+    response = RestCountriesService.new.capital_coordinates(country)
+
+    if response && response[:lat] && response[:lng]
+      response
+    else
+      nil
+    end
+  end
 end
