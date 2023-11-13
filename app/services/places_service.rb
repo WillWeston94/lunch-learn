@@ -11,20 +11,22 @@ class PlacesService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.get_tourist_sites(lon, lat)
+  def get_tourist_sites(lon, lat)
+    # binding.pry
     params = {
       categories: "tourism.sights",
       filter: "circle:#{lon},#{lat},10000",
       bias: "proximity:#{lon},#{lat}",
       limit: 10
     }
-
-    response = conn.get do |req|
-      params.each do |key, value|
-        req.params[key] = value
+    
+    response = conn.get("", params)
+    # binding.pry
+      if 
+        response.status == 200
+          JSON.parse(response.body, symbolize_names: true)
+      else
+        nil
       end
-
-      response.success? ? JSON.parse(response.body, symbolize_names: true) : []
-    end
   end
 end

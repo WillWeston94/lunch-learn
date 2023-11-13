@@ -1,20 +1,16 @@
 class TouristSitesFacade
-  def self.get_tourist_sites(country)
-    response = RestCountriesService.new
-    capital_coordinates = response.capital_coordinates(country)
+  def get_tourist_sites(country)
+    countries_facade = CountriesFacade.new
+    capital_coordinates = countries_facade.capital_coordinates(country)
     return [] if capital_coordinates.nil?
+    # binding.pry
+    places_service = PlacesService.new
 
-    site_data = PlacesService.get_tourist_sites(coordinates[:lon], coordinates[:lat])
-    site_data[:features].map do |site|
-      {
-        id: nil,
-        type: "tourist_site",
-        attributes: {
-          name: site[:properties][:name],
-          formatted: site[:properties][:formatted],
-          place_id: site[:properties][:place_id]
-        }
-      }
-    end
+    site_data = places_service.get_tourist_sites(capital_coordinates[:lon], capital_coordinates[:lat])
+    # binding.pry
+
+    serialized_sites = TouristSitesSerializer.new(site_data[:features]).serialized_json
+
+    serialized_sites
   end
 end
