@@ -5,7 +5,7 @@ RSpec.describe "Tourist Sites API" do
 
   it "returns an array of tourist site objects for a specific capital" do
     get "/api/v1/tourist_sites?country=France"
-    
+
     expect(response).to be_successful
 
       tourist_sites = JSON.parse(response.body, symbolize_names: true)[:data]

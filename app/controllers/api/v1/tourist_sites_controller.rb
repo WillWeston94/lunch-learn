@@ -6,6 +6,7 @@ class Api::V1::TouristSitesController < ApplicationController
     if tourist_sites.any?
 
       render json: TouristSiteSerializer.new(tourist_sites), status: 200
+      # binding.pry
     else
       render json: { data: [] }, status: 404
     end

@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe TouristSite do
   describe "initialize" do
-    xit "exists with attributes" do
+    it "exists with attributes" do
       site = TouristSite.new({name: "Eiffel Tower", formatted: "Paris, France", place_id: "ChIJIQBpAG2ahYAR_6128GcTUEo"})
 
       expect(site).to be_a(TouristSite)
