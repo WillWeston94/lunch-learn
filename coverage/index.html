@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-13T15:17:01-06:00">2023-11-13T15:17:01-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-13T15:22:55-06:00">2023-11-13T15:22:55-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  92.51%
+  92.54%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.81
+         1.87
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>267</b> relevant lines,
-    <span class="green"><b>247</b> lines covered</span> and
+    <b>268</b> relevant lines,
+    <span class="green"><b>248</b> lines covered</span> and
     <span class="red"><b>20</b> lines missed. </span>
     (<span class="green">
-  92.51%
+  92.54%
 </span>
 )
   </div>
@@ -128,11 +128,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#29d68b41aa6be10f4bffaf9b472a4b97c3a735f4" class="src_link" title="app/facades/tourist_sites_facade.rb">app/facades/tourist_sites_facade.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">21</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">10</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">11</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">3.60</td>
+            <td class="cell--number">5.09</td>
             
           </tr>
         
@@ -1444,8 +1444,8 @@
     
 
     <div class="t-line-summary">
-      <b>10</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>11</b> relevant lines.
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1595,18 +1595,18 @@
 
             
 
-            <code class="ruby">      TouristSite.new(</code>
+            <code class="ruby">      attributes = site[:properties].slice(:name, :formatted, :place_id)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
+          <li class="covered" data-hits="20" data-linenumber="14">
+            <span class="hits">20</span>
             
 
-            <code class="ruby">        name: site[:properties][:name],</code>
+            
+
+            <code class="ruby">      TouristSite.new(attributes)</code>
           </li>
         </div>
       
@@ -1617,45 +1617,12 @@
 
             
 
-            <code class="ruby">        formatted: site[:properties][:formatted],</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">        place_id: site[:properties][:place_id]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">      )</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
-            
-
             <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="19">
+          <li class="covered" data-hits="2" data-linenumber="16">
             <span class="hits">2</span>
             
 
@@ -1666,7 +1633,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -1677,7 +1644,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 

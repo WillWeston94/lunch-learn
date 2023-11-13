@@ -10,11 +10,8 @@ class TouristSitesFacade
     # binding.pry
 
     sites = site_data[:features].map do |site|
-      TouristSite.new(
-        name: site[:properties][:name],
-        formatted: site[:properties][:formatted],
-        place_id: site[:properties][:place_id]
-      )
+      attributes = site[:properties].slice(:name, :formatted, :place_id)
+      TouristSite.new(attributes)
     end
     sites
   end
