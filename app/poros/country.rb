@@ -1,8 +1,8 @@
 class Country
-  attr_reader :common, :official
+  attr_reader :id, :name, :official
 
-  def initialize(data)
-    @common = data[:name][:common]
-    @official = data[:name][:official]
+  def initialize(country_data)
+    @name = country_data[:name][:common]
+    @official = country_data[:name][:official]
   end
 end
