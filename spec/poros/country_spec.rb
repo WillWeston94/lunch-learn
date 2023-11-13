@@ -2,8 +2,8 @@ require "rails_helper"
 
 RSpec.describe Country do
   describe "initialize" do
-    xit "exists with attributes" do
-      country = Country.new({properties: {name: "France"} })
+    it "exists with attributes" do
+      country = Country.new({name: "France"})
 
       expect(country).to be_a(Country)
 

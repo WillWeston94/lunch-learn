@@ -13,7 +13,7 @@ RSpec.describe RecipeFacade do
       expect(response.first).to be_a(Recipe)
     end
 
-    xit "returns an empty array" do # currently crashing RSpec suite
+    it "returns an empty array" do # currently crashing RSpec suite
       query = nil
       response = facade.get_recipes_by_country(query)
 

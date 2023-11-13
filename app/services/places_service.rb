@@ -21,10 +21,11 @@ class PlacesService
     }
     
     response = conn.get("", params)
-    # binding.pry
+
       if 
         response.status == 200
-          JSON.parse(response.body, symbolize_names: true)
+          parsed_response = JSON.parse(response.body, symbolize_names: true)
+          # binding.pry
       else
         nil
       end

@@ -1,10 +1,10 @@
 class TouristSite
   attr_reader :id, :name, :formatted, :place_id
 
-    def initialize(data)
-      @name = data[:properties][:name]
-      @formatted = data[:properties][:formatted]
-      @place_id = data[:properties][:place_id]
-      binding.pry
+    def initialize(attributes = {})
+      @name = attributes[:name]
+      @formatted = attributes[:formatted]
+      @place_id = attributes[:place_id]
+      # binding.pry
     end
   end

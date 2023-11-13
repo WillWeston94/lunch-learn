@@ -5,7 +5,7 @@ class Api::V1::TouristSitesController < ApplicationController
     tourist_sites = facade.get_tourist_sites(country)
     if tourist_sites.any?
 
-      render json: TouristSitesSerializer.new(tourist_sites), status: 200
+      render json: TouristSiteSerializer.new(tourist_sites), status: 200
     else
       render json: { data: [] }, status: 404
     end
