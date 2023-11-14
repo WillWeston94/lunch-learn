@@ -1,14 +1,57 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/facades/countries_facade.rb": {
+      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/facades/recipe_facade.rb": {
         "lines": [
           1,
           null,
           1,
+          2,
+          2,
+          2,
+          2,
+          1,
+          2,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/services/edamam_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/poros/recipe.rb": {
+        "lines": [
           1,
           1,
+          null,
           1,
+          2,
+          2,
+          2,
+          2,
+          2,
           null,
           null
         ]
@@ -35,20 +78,8 @@
           null,
           null
         ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/poros/country.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1699890381
+    "timestamp": 1699994546
   }
 }
