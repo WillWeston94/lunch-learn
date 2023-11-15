@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "Edamam API"do
+RSpec.describe "Edamam API" do
   describe "GET /api/v1/recipes", :vcr  do
     it "returns a successful json response" do
       get "/api/v1/recipes", params: {country: "Deutschland"}
