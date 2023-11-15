@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       get 'learning_resources', to: 'learning_resources#show'
       post 'users', to: 'users#create'
       post 'sessions', to: 'sessions#create'
+      post 'favorites', to: 'favorites#create'
     end
   end
 end
