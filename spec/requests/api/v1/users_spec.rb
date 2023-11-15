@@ -1,14 +1,30 @@
 require "rails_helper"
 
 RSpec.describe "Users POST endpoint" do
-  it "can create a new user" do
-    user_params = {
+  let(:user) do
+    { 
+    user: 
+     {
       name: "Odell",
       email: "goodboy@ruffruff.com",
       password: "treats4lyf",
       password_confirmation: "treats4lyf"
+      }
     }
+  end
+    let(:basil_with_mismatched_password) do
+      { 
+      user_2: 
+       {
+        name: "Basil",
+        email: "BasilofBakerStreet@Disney.com",
+        password: "elementary",
+        password_confirmation: "Dawson"
+        }
+      }
+    end
 
+  it "can create a new user" do
     post "/api/v1/users", params: user, as: :json # per requirements for body
 
     expect(response).to be_successful
@@ -34,4 +50,31 @@ RSpec.describe "Users POST endpoint" do
     expect(user_attributes[:api_key]).to be_a(String)
     expect(user_attributes[:api_key].length).to eq(20)
   end
+
+  describe "when email is already taken" do
+    it "does not create a new user and returns error message about email being taken" do
+      post "/api/v1/users", params: user, as: :json
+      post "/api/v1/users", params: user, as: :json
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+
+      response_body = JSON.parse(response.body)
+
+      expect(response_body["error"]).to eq("Email has already been taken. Please try a different email.")
+    end
+  end
+
+  describe "when passwords do not match" do
+    it "does not create a new user and returns error message about passwords not matching" do
+      post "/api/v1/users", params: basil_with_mismatched_password, as: :json
+      
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+
+      response_body = JSON.parse(response.body)
+
+      expect(response_body["error"]).to eq("Passwords do not match. Please try again.")
+      end
+    end
 end
