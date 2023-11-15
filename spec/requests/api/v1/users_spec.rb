@@ -14,7 +14,7 @@ RSpec.describe "Users POST endpoint" do
   end
     let(:basil_with_mismatched_password) do
       { 
-      user_2: 
+      user: 
        {
         name: "Basil",
         email: "BasilofBakerStreet@Disney.com",
@@ -25,7 +25,8 @@ RSpec.describe "Users POST endpoint" do
     end
 
   it "can create a new user" do
-    post "/api/v1/users", params: user, as: :json # per requirements for body
+    # per requirements we need to send the request body as JSON
+    post "/api/v1/users", params: { user: { name: "Odell", email: "goodboy@ruffruff.com", password: "treats4lyf", password_confirmation: "treats4lyf" } }.to_json, headers: { "CONTENT_TYPE" => "application/json" } 
 
     expect(response).to be_successful
     expect(response.status).to eq(201)
@@ -53,8 +54,8 @@ RSpec.describe "Users POST endpoint" do
 
   describe "when email is already taken" do
     it "does not create a new user and returns error message about email being taken" do
-      post "/api/v1/users", params: user, as: :json
-      post "/api/v1/users", params: user, as: :json
+      post "/api/v1/users", params: user, as: :json, headers: { "CONTENT_TYPE" => "application/json" }
+      post "/api/v1/users", params: user, as: :json, headers: { "CONTENT_TYPE" => "application/json" }
 
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
@@ -67,14 +68,14 @@ RSpec.describe "Users POST endpoint" do
 
   describe "when passwords do not match" do
     it "does not create a new user and returns error message about passwords not matching" do
-      post "/api/v1/users", params: basil_with_mismatched_password, as: :json
+      post "/api/v1/users", params: basil_with_mismatched_password, as: :json, headers: { "CONTENT_TYPE" => "application/json" }
       
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
 
       response_body = JSON.parse(response.body)
 
-      expect(response_body["error"]).to eq("Passwords do not match. Please try again.")
+      expect(response_body["error"]).to eq("Password confirmation doesn't match Password")
       end
     end
 end

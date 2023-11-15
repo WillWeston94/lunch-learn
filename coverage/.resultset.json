@@ -4,25 +4,20 @@
       "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/controllers/api/v1/users_controller.rb": {
         "lines": [
           1,
+          null,
+          1,
+          4,
+          4,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
           1,
           null,
           1,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
+          4,
           null,
           null
         ]
@@ -40,11 +35,12 @@
           1,
           1,
           1,
+          1,
           null,
           1,
-          0,
-          0,
-          0,
+          2,
+          2,
+          2,
           null,
           null,
           null
@@ -56,8 +52,16 @@
           1,
           null
         ]
+      },
+      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1700029356
+    "timestamp": 1700031274
   }
 }
