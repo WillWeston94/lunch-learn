@@ -7,8 +7,7 @@ RSpec.describe "Sessions POST endpoint" do
       credentials = 
       {
         email: "BasilofBakerStreet",
-        password: "elementary",
-        password_confirmation: "elementary"
+        password: "elementary"
       }
 
       post "/api/v1/sessions", params: credentials, as: :json, headers: { "CONTENT_TYPE" => "application/json" }

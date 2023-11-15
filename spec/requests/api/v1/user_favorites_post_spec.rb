@@ -8,8 +8,7 @@ RSpec.describe "Favorites POST endpoint" do
       credentials =
       {
         email: "BasilofBakerStreet",
-        password: "elementary",
-        password_confirmation: "elementary"
+        password: "elementary"
       }
       request_body = 
       {
@@ -41,8 +40,7 @@ RSpec.describe "Favorites POST endpoint" do
       credentials =
       {
         email: "BasilofBakerStreet",
-        password: "elementary",
-        password_confirmation: "elementary"
+        password: "elementary"
       }
       request_body =
       {
