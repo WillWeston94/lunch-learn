@@ -1,0 +1,194 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyCXyAF49Vuzxj4MlOopScBcvajii7NkEF4&part=snippet&q=Deutschland&type=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Wed, 15 Nov 2023 03:52:09 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "65BD7dPgH4R1FSftZutOaaIiYK8",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 4,
+            "resultsPerPage": 4
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "lDQPWkrTS7ju44BdP2D21ob9ZdU",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "7sxora2imC0"
+              },
+              "snippet": {
+                "publishedAt": "2020-08-29T12:59:40Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Germany",
+                "description": "Sources: A Concise History of Germany (2019) by Mary Fulbrook, Cambridge University Press, Cambridge, UK. The Shortest ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/7sxora2imC0/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/7sxora2imC0/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/7sxora2imC0/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-08-29T12:59:40Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "KwGGrZrOlladrtNXEgBIIXHl4N4",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "s31ymVzOfGY"
+              },
+              "snippet": {
+                "publishedAt": "2019-09-24T08:31:33Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "15 Things Not From the Country You Think",
+                "description": "MrHistory.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-09-24T08:31:33Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "aNxu6v7jdYrXy4cQgrJq59NARAk",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "5cEk732tKFQ"
+              },
+              "snippet": {
+                "publishedAt": "2022-06-22T05:06:21Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of the Netherlands",
+                "description": "Sources: \"A Concise History of the Netherlands\" (2017) by James C. Kennedy. Cambridge University Press, UK. \"A Brief History of ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/5cEk732tKFQ/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/5cEk732tKFQ/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/5cEk732tKFQ/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-22T05:06:21Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "BWhpXS5N66Qr4uC4kBP2oZaNsdU",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "fEvBT95qfJE"
+              },
+              "snippet": {
+                "publishedAt": "2022-10-13T22:52:32Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Palau",
+                "description": "Pictures Requiring Attribution: Madara Skaistkalne: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/fEvBT95qfJE/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/fEvBT95qfJE/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/fEvBT95qfJE/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-10-13T22:52:32Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Wed, 15 Nov 2023 03:52:09 GMT
+recorded_with: VCR 6.2.0
