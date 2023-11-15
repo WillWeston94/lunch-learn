@@ -1,0 +1,247 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyCXyAF49Vuzxj4MlOopScBcvajii7NkEF4&part=snippet&q=Deutschland&type=video
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Wed, 15 Nov 2023 04:36:40 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "65BD7dPgH4R1FSftZutOaaIiYK8",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 4,
+            "resultsPerPage": 4
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "lDQPWkrTS7ju44BdP2D21ob9ZdU",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "7sxora2imC0"
+              },
+              "snippet": {
+                "publishedAt": "2020-08-29T12:59:40Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Germany",
+                "description": "Sources: A Concise History of Germany (2019) by Mary Fulbrook, Cambridge University Press, Cambridge, UK. The Shortest ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/7sxora2imC0/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/7sxora2imC0/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/7sxora2imC0/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-08-29T12:59:40Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "KwGGrZrOlladrtNXEgBIIXHl4N4",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "s31ymVzOfGY"
+              },
+              "snippet": {
+                "publishedAt": "2019-09-24T08:31:33Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "15 Things Not From the Country You Think",
+                "description": "MrHistory.",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/s31ymVzOfGY/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-09-24T08:31:33Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "aNxu6v7jdYrXy4cQgrJq59NARAk",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "5cEk732tKFQ"
+              },
+              "snippet": {
+                "publishedAt": "2022-06-22T05:06:21Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of the Netherlands",
+                "description": "Sources: \"A Concise History of the Netherlands\" (2017) by James C. Kennedy. Cambridge University Press, UK. \"A Brief History of ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/5cEk732tKFQ/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/5cEk732tKFQ/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/5cEk732tKFQ/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-22T05:06:21Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "BWhpXS5N66Qr4uC4kBP2oZaNsdU",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "fEvBT95qfJE"
+              },
+              "snippet": {
+                "publishedAt": "2022-10-13T22:52:32Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Palau",
+                "description": "Pictures Requiring Attribution: Madara Skaistkalne: ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/fEvBT95qfJE/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/fEvBT95qfJE/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/fEvBT95qfJE/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-10-13T22:52:32Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Wed, 15 Nov 2023 04:36:40 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest?api_key=2e923d9bc7130fcd82ba417808f3748d&format=json&media=photos&method=flickr.photos.search&nojsoncallback=1&per_page=10&query=Deutschland
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1710'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 15 Nov 2023 04:36:40 GMT
+      Server:
+      - Apache/2.4.58 (Ubuntu)
+      Set-Cookie:
+      - ccc=%7B%22needsConsent%22%3Afalse%2C%22managed%22%3A0%2C%22changed%22%3A0%2C%22info%22%3A%7B%22cookieBlock%22%3A%7B%22level%22%3A0%2C%22blockRan%22%3A0%7D%7D%7D;
+        expires=Fri, 15-Dec-2023 04:36:40 GMT; Max-Age=2592000; path=/; domain=.flickr.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 285ed0d943d04ef141163c5248fad1ae.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DFW57-P3
+      X-Amz-Cf-Id:
+      - 4slGSPcHc64dS68o8iOhTPgTr-P6DGc7pfrZIqYMoOZcalabcUi4vQ==
+    body:
+      encoding: UTF-8
+      string: '{"photos":{"page":1,"pages":46747,"perpage":10,"total":467463,"photo":[{"id":"53333281138","owner":"194712956@N07","secret":"5d1720f3d9","server":"65535","farm":66,"title":"OOAK
+        Fruit Bat by Angela Marleau MM 2023","ispublic":1,"isfriend":0,"isfamily":0},{"id":"53332175392","owner":"194712956@N07","secret":"8946532465","server":"65535","farm":66,"title":"OOAK
+        Fruit Bat by Angela Marleau MM 2023","ispublic":1,"isfriend":0,"isfamily":0},{"id":"53333281023","owner":"199205815@N05","secret":"ccaf1fc988","server":"65535","farm":66,"title":"Unique
+        plants","ispublic":1,"isfriend":0,"isfamily":0},{"id":"53333512405","owner":"194712956@N07","secret":"7c0b65079a","server":"65535","farm":66,"title":"OOAK
+        Fruit Bat by Angela Marleau MM 2023","ispublic":1,"isfriend":0,"isfamily":0},{"id":"53333280993","owner":"145148038@N03","secret":"d8c047fa1c","server":"65535","farm":66,"title":"9110
+        (2021)","ispublic":1,"isfriend":0,"isfamily":0},{"id":"53333280928","owner":"199205815@N05","secret":"29b01c63fb","server":"65535","farm":66,"title":"Unique
+        plants","ispublic":1,"isfriend":0,"isfamily":0},{"id":"53333394859","owner":"52487545@N08","secret":"30e1525050","server":"65535","farm":66,"title":"DSC_2648","ispublic":1,"isfriend":0,"isfamily":0},{"id":"53332175117","owner":"52487545@N08","secret":"7d595762d3","server":"65535","farm":66,"title":"DSC_2664","ispublic":1,"isfriend":0,"isfamily":0},{"id":"53333280738","owner":"52487545@N08","secret":"d9f4d9b3d7","server":"65535","farm":66,"title":"DSC_2674","ispublic":1,"isfriend":0,"isfamily":0},{"id":"53333280748","owner":"52487545@N08","secret":"b01d4b6498","server":"65535","farm":66,"title":"DSC_2650","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"}'
+  recorded_at: Wed, 15 Nov 2023 04:36:40 GMT
+recorded_with: VCR 6.2.0
