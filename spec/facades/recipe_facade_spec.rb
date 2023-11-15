@@ -1,9 +1,9 @@
 require "rails_helper"
 
-RSpec.describe RecipeFacade do
+RSpec.describe RecipeFacade, :vcr do
   let (:facade) { RecipeFacade }
 
-  describe "#get_recipes_by_country", :vcr do
+  describe "#get_recipes_by_country" do
     it "returns an array of recipe objects for a specific country" do
       query = "Deutschland"
       response = facade.get_recipes_by_country(query)

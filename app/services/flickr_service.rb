@@ -13,6 +13,8 @@ class FlickrService
       req.params["media"] = "photos"
       req.params["format"] = "json"
       req.params["per_page"] = 10 # Requirement "up to 10 images for that country search"
+      req.params["nojsoncallback"] = 1
     end
+    response
   end
 end
