@@ -75,8 +75,8 @@
           1,
           1,
           null,
-          1,
-          1,
+          0,
+          0,
           null,
           null,
           null
@@ -89,13 +89,13 @@
           1,
           6,
           6,
-          6,
-          6,
+          5,
+          5,
           4,
           8,
           null,
           null,
-          2,
+          1,
           null,
           null,
           null
@@ -174,6 +174,38 @@
           12,
           12,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/spec/poros/country_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/poros/country.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -942,18 +974,6 @@
           null
         ]
       },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/poros/country.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
       "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/controllers/api/v1/recipes_controller.rb": {
         "lines": [
           1,
@@ -1106,6 +1126,6 @@
         ]
       }
     },
-    "timestamp": 1700044032
+    "timestamp": 1700052219
   }
 }
