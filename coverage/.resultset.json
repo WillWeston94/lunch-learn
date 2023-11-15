@@ -1,33 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/controllers/api/v1/users_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          4,
-          4,
-          2,
-          null,
-          2,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          4,
-          null,
-          null
-        ]
-      },
-      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/models/user.rb": {
         "lines": [
           1,
@@ -38,9 +11,9 @@
           1,
           null,
           1,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -49,6 +22,29 @@
       "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/models/application_record.rb": {
         "lines": [
           1,
+          1,
+          null
+        ]
+      },
+      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/controllers/api/v1/sessions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/williamweston/Turing/3-mod/final-project/lunch-learn/app/controllers/application_controller.rb": {
+        "lines": [
           1,
           null
         ]
@@ -62,6 +58,6 @@
         ]
       }
     },
-    "timestamp": 1700031274
+    "timestamp": 1700031909
   }
 }

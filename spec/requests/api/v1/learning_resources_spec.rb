@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "LearningResources API", :vcr do
-  describe "GET /api/v1/learning_resources"do
+  describe "GET /api/v1/learning_resources" do
     it "returns a successful json response" do
       get "/api/v1/learning_resources", params: { country: "Deutschland" }
 
