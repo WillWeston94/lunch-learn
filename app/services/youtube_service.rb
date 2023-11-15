@@ -10,7 +10,7 @@ class YoutubeService
     response = conn.get("/youtube/v3/search") do |req|
       req.params["q"] = country
       req.params["type"] = "video"
-      req.params["channelID"] = "UCluQ5yInbeAkkeCndNnUhpw"
+      req.params["channelId"] = "UCluQ5yInbeAkkeCndNnUhpw"
     end
   end
 end
